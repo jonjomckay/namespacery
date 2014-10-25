@@ -27,7 +27,7 @@ class Resolver
      */
     public function parseSegments()
     {
-        $this->segments = explode('\\', $this->namespace);
+        $this->segments = explode('\\', ltrim($this->namespace, '\\'));
 
         return $this;
     }
