@@ -1,6 +1,8 @@
 Namespacery
 ===========
 
+[![Build Status](https://travis-ci.org/jonjomckay/namespacery.svg?branch=develop)](https://travis-ci.org/jonjomckay/namespacery)
+
 Namespacery is a simple PHP library to help parse namespaces in an easily-accessible way.
 
 ## Installation
@@ -8,8 +10,10 @@ Namespacery is a simple PHP library to help parse namespaces in an easily-access
 The library can be installed with Composer, by including the following in your `composer.json`:
 
 ```json
-"require": {
-    "xenolope/namespacery": "0.*"
+{
+    "require": {
+        "xenolope/namespacery": "0.*"
+    }
 }
 ```
 
