@@ -5,7 +5,7 @@ Namespacery is a simple PHP library to help parse namespaces in an easily-access
 
 ## Installation
 
-The library can be installed with Composer, by including the following in your `composer.json:
+The library can be installed with Composer, by including the following in your `composer.json`:
 
 ```json
 "require": {
