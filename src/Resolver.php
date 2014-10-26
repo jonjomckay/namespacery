@@ -43,6 +43,14 @@ class Resolver
     /**
      * @return string
      */
+    public function getFirstSegment()
+    {
+        return reset($this->segments);
+    }
+
+    /**
+     * @return string
+     */
     public function getLastSegment()
     {
         return end($this->segments);

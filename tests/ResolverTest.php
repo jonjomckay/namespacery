@@ -27,6 +27,12 @@ class ResolverTest extends \PHPUnit_Framework_TestCase
         $this->assertCount(4, $this->prefixedResolver->parseSegments()->getSegments());
     }
 
+    public function testGetFirstSegment()
+    {
+        $this->assertSame('Vendor', $this->plainResolver->parseSegments()->getFirstSegment());
+        $this->assertSame('Vendor', $this->prefixedResolver->parseSegments()->getFirstSegment());
+    }
+
     public function testGetLastSegment()
     {
         $this->assertSame('Class', $this->plainResolver->parseSegments()->getLastSegment());
