@@ -22,6 +22,12 @@ The library can be installed with Composer, by including the following in your `
 ```php
 $resolver = new \Xenolope\Namespacery('Vendor\Package\Group\Class');
 
+// Returns the value of the first namespace segment
+$resolver->parseSegments()->getFirstSegment();
+
+// Returns the value of the last namespace segment
+$resolver->parseSegments()->getLastSegment();
+
 // Returns the value of the segment at the given index, or an \OutOfBoundsException if the index doesn't exist
 $resolver->parseSegments()->getSegment(1);
 
