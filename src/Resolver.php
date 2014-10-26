@@ -41,6 +41,14 @@ class Resolver
     }
 
     /**
+     * @return string
+     */
+    public function getLastSegment()
+    {
+        return end($this->segments);
+    }
+
+    /**
      * @param int $index
      * @return string
      * @throws \OutOfBoundsException
